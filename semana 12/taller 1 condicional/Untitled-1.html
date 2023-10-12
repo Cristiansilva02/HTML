@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CONDICIONAL</title>
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="./Estilos 01.css">
+</head>
+<body>
+    <h1>USO DEL CONDICIONAL SI </h1>
+    <p>Programa que captura la cantidad de días trabajados y el valor del día para un trabajador. Si los días trabajados son mayores a 15, obtiene una bonificación de 50,000. En caso contrario, no la tiene, determinando el valor a pagar para el empleado.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        //ENTRADA
+        let dias, vdia, subtotal, bonificacion, total;
+        bonificacion = 50000;
+        dias = parseInt(prompt("Ingrese la cantidad de días trabajados"));
+        vdia = parseInt(prompt("Ingrese el valor de un día"));
+        //PROCESO   
+        subtotal = dias * vdia; // fórmula de pago del día trabajado
+        if (dias > 15) {
+            total = subtotal + bonificacion;
+            document.write("<table><caption>Relación de pagos</caption><tr><th>DIAS TRABAJADOS</th><td>", dias, "</td></tr><tr><th>VALOR DIA</th><td>", vdia, "</td></tr><tr><th>BONIFICACIONES</th><td>", bonificacion, "</td></tr><tr><th>VALOR A PAGAR:</th><td>", total, "</td></tr></table>");
+        } else {
+            bonificacion = 0;
+            total = subtotal + bonificacion;
+            document.write("<table><caption>Relación de pagos</caption><tr><th>DIAS TRABAJADOS</th><td>", dias, "</td></tr><tr><th>VALOR DIA</th><td>", vdia, "</td></tr><tr><th>BONIFICACIONES</th><td>", bonificacion, "</td></tr><tr><th>VALOR A PAGAR:</th><td>", total, "</td></tr></table>");
+        }
+    </script>
+</body>
+</html>
+        
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
